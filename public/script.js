@@ -32,6 +32,7 @@ function renderApiList() {
     const apiData = [
         { name: "AI Hercai", description: "Ask Questions with AI Powered By Hercai", usage: "/api/ai?query=example" },
         {name: "CHATGPT 4o", description: "Ask Questions with GPT4o (credit: kenlie and clean response by Jonell Magallanes modification", usage: "/api/gpt4o?context=hi"},
+        { name: "GPT 4", description: "Chat With GPT 4 AI", usage: "/api/gpt4?text=hi"},
         { name: "BlackBox AI", description: "This AI use commonly for write codes but can answer the question like not about codes (Tagalog language can't send it)", usage: "/api/blackbox?text=hi"},
         { name: "AlightMotion Info Getter", description: "This API Give you information about AlightMotion Project Also As AlightLink", usage: "/api/am?alighLink=" },
         { name: "File Upload", description: "Upload your files and sharable link", usage: "/api/upload?url="},
@@ -56,7 +57,7 @@ function renderApiList() {
     apiList.innerHTML = '';
 
     apiData.forEach((api, index) => {
-        let apiUrl = `${window.location.origin}${api.usage}`;
+        let apiUrl = `${api.usage}`;
         let card = document.createElement('div');
         card.className = 'card mb-4';
         card.style.animationDelay = `${index * 0.1}s`; 
