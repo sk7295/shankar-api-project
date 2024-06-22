@@ -50,7 +50,7 @@ function renderApiList() {
         { name: "Remove Background API", description: "Allows you to ability to remove background for free powered by removebg.com", usage: "/api/rbg?imageUrl="}, { name: "TikTok Stalk User", description: "This API is to use to stalk the user from Tiktok In real time data", usage: "/api/tikstalk?unique_id="}, { name: "Tiktok Search Video", description: "This Api to browse the tiktok video based on the content title and hashtags", usage: "/api/tiktok/searchvideo?keywords="},
         {name: "Tiktok Downloader", description: "This API is to downloade the video from tiktok using url copylink", usage: "/api/tikdl=url"},
         {name: "TinyUrl", description: "This API ability to short the link using this api", usage: "/api/tinyurl?url="},
-        { name: "Twitter Video Downloader", description: "This API to allowed to download the twitter videos", usage: "/api/twitter?url="}
+        { name: "Twitter Video Downloader", description: "This API to allowed to download the twitter videos", usage: "/api/twitter?url="}, { name: "DreamForth", description: "Search meaning your dreams want to know", usage: "/api/df?title=&page="} 
     ];
 
     let apiList = document.getElementById('api-list');
