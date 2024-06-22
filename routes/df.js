@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.get('/df', async (req, res) => {
     const title = req.query.title || '';
     const page = req.query.page || '1';
     const url = `https://www.dreamforth.com/search.php?query=${encodeURIComponent(title)}&type=dreams&page=${page}`;
